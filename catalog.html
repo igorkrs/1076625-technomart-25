@@ -38,7 +38,7 @@
       <ul class="site-navigation">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Каталог</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Спецпредложения</a></li>
         <li><a href="#">Доставка</a></li>
@@ -47,41 +47,43 @@
     </nav>
   </header>
   <main class="container">
-    <section class="about">
-      <div class="about-wrapper">
-        <h3 class="about-title">КОМПАНИЯ «Техномарт»</h3>
-        <p class="about-text">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p class="about-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="about-list">
-          <li class="about-item">
-            Деловые линии
-          </li>
-          <li class="about-item">
-            Автотрейдинг
-          </li>
-          <li class="about-item">
-            ЖелДорЭкспедиция
-          </li>
-        </ul>
-        <a class="about-link" href="#" title="Шо тут делать?">Подробнее о компании</a>
-      </div>
 
-      <div class="about-wrapper">
-        <h3 class="about-title">КОНТАКТЫ</h3>
-        <p class="about-text">
-          Вы можете забрать товар сами,
-          заехав в наш офис:
+    <h1>перфораторы</h1>
+    <!--  -->
+
+    <section>
+      <div>
+        <span class="main-filter">фильтр:</span>
+        <span class="filter-name">производители:</span>
+        <p>
+          <input type="checkbox" id="bosch" checked><label for="bosch">bosch</label><Br>
+          <input type="checkbox" id="interskol"><label for="interskol">интерскол</label><Br>
+          <input type="checkbox" id="makita" checked><label for="makita">makita</label><Br>
+          <input type="checkbox" id="dewalt"><label for="dewalt">dewalt</label><Br>
+          <input type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
         </p>
-        <div class="about-map">
-          <!-- карта =) -->
-        </div>
-        <a class="about-link" href="#">Заблудились? Напишите нам!</a>
+      </div>
+      <div>
+        <span class="filter-name">
+          питание
+        </span>
+        <p>
+          <input name="power" type="radio" id="accum" checked><label for="accum">аккумуляторные</label><Br>
+          <input name="power" type="radio" id="network"><label for="network">сетевые</label>
+        </p>
+      </div>
+      <button>показать</button>
+    </section>
+    <section class="main-sort-by">
+      <div>
+        <span class="main-sorting">сортировка:</span>
+        <ul>
+          <li class="main-sorting-item"><a href="#">по цене</a></li>
+          <li class="main-sorting-item"><a href="#">по типу</a></li>
+          <li class="main-sorting-item"><a href="#">по функционалу</a></li>
+        </ul>
+        <button>up</button>
+        <button>down</button>
       </div>
     </section>
   </main>
