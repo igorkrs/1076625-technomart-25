@@ -1,0 +1,19 @@
+.main-logo {
+  display: block;
+  width: 220px;
+  height: 47px;
+  background-color: #ee3643;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase
+}
+
+.main-footer-logo {
+  display: block;
+  width: 220px;
+  height: 68px;
+  background-color: #ee3643;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase
+}

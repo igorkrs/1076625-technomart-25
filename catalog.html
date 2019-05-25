@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header-wrapper">
-      <a href="index.html" class="main-logo">Техномарт</a>
+      <a href="index.html" class="main-logo">
+        <img src="img/technomart-logo.svg" width="220" height="47" alt="Техномарт">
+      </a>
       <ul class="main-header-list">
         <li class="main-header-item">Тут будет форма "Поиск"</li>
         <li class="main-header-item"><a href="#">Закладки</a></li>
@@ -31,8 +34,10 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </span></div>
       <div class="main-header-user">
-        <a class="main-header-user-name" href="#">Равшан Джамшутович</a>
-        <a class="main-header-logout" href="#"><img src="logout.jpg" alt="Выход"></a>
+        <div class="main-header-user-control">
+          <a class="main-header-user-name" href="#">Равшан Джамшутович</a>
+          <a class="main-header-logout" href="#"><img src="logout.jpg" alt="Выход"></a>
+        </div>
         <ul class="user-info">
           <li class="user-orders"><a href="#">Мои заказы</a></li>
           <li class="user-account"><a href="#">Личный кабинет</a></li>
@@ -53,10 +58,10 @@
   </header>
   <main class="container">
     <ul class="main-navigation-list">
-      <li class="main-navigation-item"><a class="catalog-navigation-item-home" href="">homepage</a></li>
-      <li class="main-navigation-item">каталог<a href=""></a></li>
-      <li class="main-navigation-item">инструмент<a href=""></a></li>
-      <li class="main-navigation-item">перфораторы<a href=""></a></li>
+      <li class="main-navigation-item"><a class="catalog-navigation-item-home" href="index.html">homepage</a></li>
+      <li class="main-navigation-item"><a href="#">каталог</a></li>
+      <li class="main-navigation-item"><a href="#">инструмент</a></li>
+      <li class="main-navigation-item"><a>перфораторы</a></li>
     </ul>
     <h1 class="page-title">перфораторы</h1>
 
@@ -94,15 +99,15 @@
           <li class="main-sorting-item"><a href="#">по типу</a></li>
           <li class="main-sorting-item"><a href="#">по функционалу</a></li>
         </ul>
-        <ul class="main-sort-up-down">
-          <li class="main-sorting-item-up"><a>up</a></li>
-          <li class="main-sorting-item-down"><a href="#">down</a></li>
+        <ul class="main-sort-direction">
+          <li class="main-sorting-item-up"><a>по возрастанию</a></li>
+          <li class="main-sorting-item-down"><a href="#">по убыванию</a></li>
         </ul>
       </div>
       <ul class="main-item-list">
         <li class="main-item">
           <div class="main-item-wrapper">
-            <img src="perf1.img" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/perf1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -120,7 +125,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf2.img" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/perf2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -138,7 +143,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf3.img" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/perf3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -155,7 +160,7 @@
         </li>
         <li class="main-item">
           <div class="main-item-wrapper">
-            <img src="perf1.img" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/perf1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -173,7 +178,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf2.img" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/perf2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -191,7 +196,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf3.img" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/perf3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -208,7 +213,7 @@
         </li>
         <li class="main-item">
           <div class="main-item-wrapper">
-            <img src="perf1.img" alt="Перфоратор BOSCH BFG 3000">
+            <img src="img/perf1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -226,7 +231,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf2.img" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img/perf2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -244,7 +249,7 @@
         </li>
         <li>
           <div class="main-item-wrapper">
-            <img src="perf3.img" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img/perf3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <div class="main-item-action">
               <a class="main-item-buy" href="#">купить</a>
               <a class="main-item-to-bookmarks" href="#">в закладки</a>
@@ -264,8 +269,9 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer-wrapper">
-      <a href="index.html" class="main-footer-logo">Техномарт</a>
-
+      <a href="index.html" class="main-footer-logo">
+        <img src="img/technomart-logo-footer.svg" width="138" height="23" alt="Техномарт">
+      </a>
       <ul class="main-footer-navigation-list">
         <li class="main-footer-navigation-item"><a href="#">Компания</a></li>
         <li class="main-footer-navigation-item"><a href="#">Новости</a></li>
