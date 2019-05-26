@@ -1,19 +1,139 @@
-.main-logo {
-  display: block;
-  width: 220px;
-  height: 47px;
-  background-color: #ee3643;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: normal;
+  color: black;
+  text-transform: none;
+
+  background-color: #ffffff;
 }
 
-.main-footer-logo {
-  display: block;
-  width: 220px;
-  height: 68px;
-  background-color: #ee3643;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase
+/* ШАПКА */
+
+a {
+  text-decoration: none;
 }
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.main-header-wrapper {
+  /* display: flex;
+  width: 1200px;
+  height: 42px; */
+  background-color: #293449
+}
+
+.main-header-list,
+.user-navigation,
+.site-navigation,
+.main-footer-navigation-list,
+.main-footer-categories-list,
+.main-footer-social-list {
+
+  color: #fff;
+  list-style: none;
+}
+
+.main-header-list a,
+.user-navigation a,
+.site-navigation a {
+  color: #fff;
+}
+
+.site-navigation {
+  background-color: #32425c;
+}
+
+.user-login-link a {
+  color: #000000;
+}
+
+.main-header-list a:hover,
+.site-navigation a:hover {
+  background-color: #212a3a;
+}
+
+.main-header-item-cart {
+  background-color: #ee3643
+}
+
+.main-header-item-buy {
+  background-color: #63a63e
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #5fbb2d;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.main-header-text {
+  font-style: italic;
+  size: 16px;
+  color: #ee3643;
+  text-align: left;
+}
+
+.main-header-phone {
+  color: #ee3643;
+}
+
+.main-footer-wrapper {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.main-footer-wrapper a {
+  color: #ffffff;
+}
+
+.main-footer-wrapper-darkblue {
+  background-color: #293449;
+}
+
+.about-wrapper-long {
+  text-align: left;
+}
+
+.about-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 13;
+}
+
+.about-list {
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.about-link {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.main-logo,
+.main-footer-logo {
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  width: 220px;
+  height: 47px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* .main-footer-logo {
+  height: 68px;
+} */
