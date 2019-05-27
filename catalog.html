@@ -78,18 +78,19 @@
       <div class="developers">
         <span class="filter-name">производители:</span>
         <p>
-          <input type="checkbox" id="bosch" checked><label for="bosch">bosch</label><Br>
-          <input type="checkbox" id="interskol"><label for="interskol">интерскол</label><Br>
-          <input type="checkbox" id="makita" checked><label for="makita">makita</label><Br>
-          <input type="checkbox" id="dewalt"><label for="dewalt">dewalt</label><Br>
-          <input type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
+          <input class="visually-hidden" type="checkbox" id="bosch" checked><label for="bosch">bosch</label><Br>
+          <input class="visually-hidden" type="checkbox" id="interskol"><label for="interskol">интерскол</label><Br>
+          <input class="visually-hidden" type="checkbox" id="makita" checked><label for="makita">makita</label><Br>
+          <input class="visually-hidden" type="checkbox" id="dewalt"><label for="dewalt">dewalt</label><Br>
+          <input class="visually-hidden" type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
         </p>
       </div>
       <div class="power">
         <span class="filter-name">питание:</span>
         <p>
-          <input name="power" type="radio" id="accum" checked><label for="accum">аккумуляторные</label><Br>
-          <input name="power" type="radio" id="network"><label for="network">сетевые</label>
+          <input class="visually-hidden" name="power" type="radio" id="accum" checked><label
+            for="accum">аккумуляторные</label><Br>
+          <input class="visually-hidden" name="power" type="radio" id="network"><label for="network">сетевые</label>
         </p>
       </div>
       <button class="main-show">показать</button>
@@ -304,7 +305,7 @@
       </div>
       <ul class="main-footer-social-list">
         <li class="main-footer-social-item main-footer-social-item-vk">
-          <a href="https://vk.com">vk</a>
+          <a href="https://vk.com">vkontakte</a>
         </li>
         <li class="main-footer-social-item main-footer-social-item-fb">
           <a href="https://www.facebook.com">facebook</a>
@@ -325,6 +326,14 @@
       </div>
     </div>
   </footer>
+  <section class="added-to-cart">
+    <button class="exit-button" type="button">Х</button>
+    <h2 class="good-added">Товар добавлен в корзину!</h2>
+    <ul class="added-to-cart-list">
+      <li class="added-to-cart-item added-to-cart-item-red"><a href="#">Оформить заказ</a></li>
+      <li class="added-to-cart-item"><a href="#">Продолжить покупки</a></li>
+    </ul>
+  </section>
 </body>
 
 </html>
