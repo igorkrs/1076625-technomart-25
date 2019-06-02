@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
@@ -18,7 +17,11 @@
         <img src="img/technomart-logo.svg" width="109" height="19" alt="логотип магазина Техномарт">
       </a>
       <ul class="main-header-list">
-        <li class="main-header-item">Тут будет форма "Поиск"</li>
+        <li class="main-header-item">
+          <form action="https://echo.htmlacademy.ru" method="POST"></form>
+          <label for="search-field">Поиск:</label>
+          <input type="text" name="search" id="search-field">
+        </li>
         <li class="main-header-item"><a href="#">Закладки</a></li>
         <li class="main-header-item"><a href="#">Корзина</a></li>
         <li class="main-header-item main-header-item-buy"><a href="#">Оформить заказ</a></li>
@@ -147,15 +150,31 @@
       </div>
     </div>
   </footer>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <label for="username-field">Ваше имя:</label><br>
-    <input type="text" name="username" id="username-field" placeholder="Имя Фамилия"><br>
-    <label for="e-mail-field">Ваш e-mail:</label><br>
-    <input type="text" name="e-mail" id="e-mail-field" placeholder="email@example.com"> <br>
-    <label for="about">Текст письма:</label><br>
-    <textarea rows="5" name="about" id="about-field" placeholder="В свободной форме"></textarea><br>
-    <button type="submit">отправить</button>
+  <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+    <button class="form-close" type="button"><img src="img/icons/icon-form-close.svg" width="21" height="21"
+        alt="Выход"></button>
+    <ul class="form-list">
+      <li class="form-item">
+        <label class="form-label" for="username-field">Ваше имя:</label>
+        <input class="form-input" type="text" name="username" id="username-field" placeholder="Имя Фамилия">
+      </li>
+      <li class="form-item">
+        <label class="form-label" for="e-mail-field">Ваш e-mail:</label>
+        <input class="form-input" type="text" name="e-mail" id="e-mail-field" placeholder="email@example.com">
+      </li>
+    </ul>
+    <div class="form-block">
+      <label class="form-label" for="about-field">Текст письма:</label>
+      <textarea class="form-textarea" rows="5" name="about" id="about-field" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="form-submit" type="submit">отправить</button>
   </form>
+  <section class="map-block">
+    <button class="map-close" type="button">
+      <img src="img/icons/icon-form-close.svg" width="21" height="21" alt="Выход">
+    </button>
+    <img src="img/map-zoomed.jpg" alt="Наш магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+  </section>
 </body>
 
 </html>

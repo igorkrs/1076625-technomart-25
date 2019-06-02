@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normilize.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -69,7 +69,7 @@
     </ul>
     <h1 class="page-title">перфораторы</h1>
 
-    <section>
+    <form class="form-filter" action="https://echo.htmlacademy.ru" method="POST">
       <span class="main-filters">фильтр:</span>
       <div class="price">
         <span>цена:</span>
@@ -77,28 +77,24 @@
       </div>
       <div class="developers">
         <span class="filter-name">производители:</span>
-        <p>
-          <input class="visually-hidden" type="checkbox" id="bosch" checked><label for="bosch">bosch</label><Br>
-          <input class="visually-hidden" type="checkbox" id="interskol"><label for="interskol">интерскол</label><Br>
-          <input class="visually-hidden" type="checkbox" id="makita" checked><label for="makita">makita</label><Br>
-          <input class="visually-hidden" type="checkbox" id="dewalt"><label for="dewalt">dewalt</label><Br>
-          <input class="visually-hidden" type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
-        </p>
+        <input class="visually-hidden" type="checkbox" id="bosch" checked><label for="bosch">bosch</label>
+        <input class="visually-hidden" type="checkbox" id="interskol"><label for="interskol">интерскол</label>
+        <input class="visually-hidden" type="checkbox" id="makita" checked><label for="makita">makita</label>
+        <input class="visually-hidden" type="checkbox" id="dewalt"><label for="dewalt">dewalt</label>
+        <input class="visually-hidden" type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
       </div>
       <div class="power">
-        <span class="filter-name">питание:</span>
-        <p>
-          <input class="visually-hidden" name="power" type="radio" id="accum" checked><label
-            for="accum">аккумуляторные</label><Br>
-          <input class="visually-hidden" name="power" type="radio" id="network"><label for="network">сетевые</label>
-        </p>
+        <p class="filter-name">питание:</p>
+        <input class="visually-hidden" name="power" type="radio" id="accum" checked><label
+          for="accum">аккумуляторные</label>
+        <input class="visually-hidden" name="power" type="radio" id="network"><label for="network">сетевые</label>
       </div>
       <button class="main-show">показать</button>
-    </section>
+    </form>
     <section class="main-item-list-wrapper">
 
       <div class="main-sort-by">
-        <span class="main-sorting">сортировка:</span>
+        <p class="main-sorting">сортировка:</p>
         <ul class="main-sorting-list">
           <li class="main-sorting-item"><a>по цене</a></li>
           <li class="main-sorting-item"><a href="#">по типу</a></li>
@@ -327,7 +323,9 @@
     </div>
   </footer>
   <section class="added-to-cart">
-    <button class="exit-button" type="button">Х</button>
+    <button class="close" type="button">
+      <img src="img/icons/icon-form-close.svg" width="21" height="21" alt="Выход">
+    </button>
     <h2 class="good-added">Товар добавлен в корзину!</h2>
     <ul class="added-to-cart-list">
       <li class="added-to-cart-item added-to-cart-item-red"><a href="#">Оформить заказ</a></li>
