@@ -36,12 +36,21 @@ a {
   text-decoration: none;
 }
 
+.main-header-text,
+.main-header-input {
+  margin: 0;
+  padding: 0;
+}
+
 .main-header {
   background-color: #f4f7f9;
 }
 
 .main-header-wrapper {
   /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 1200px;
   height: 42px; */
   background-color: #293449
@@ -53,7 +62,8 @@ a {
 .main-footer-navigation-list,
 .main-footer-categories-list,
 .main-footer-social-list {
-
+  margin: 0;
+  padding: 0;
   color: #fff;
   list-style: none;
 }
@@ -79,21 +89,40 @@ a {
   background-color: #212a3a;
 }
 
-.main-header-item-cart {
-  background-color: #ee3643
+.main-header-label {
+  /* font-size: 0; */
+}
+
+.main-header-input {
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+
+.main-header-input:hover,
+.main-header-input:focus {
+  background-color: #212a3a;
+}
+
+.main-header-input:focus {
+  background-color: #ffffff;
+}
+
+.main-header-input .main-header-item-cart {
+  background-color: #ee3643;
 }
 
 .main-header-item-buy {
-  background-color: #63a63e
+  background-color: #63a63e;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #5fbb2d;
-}
 
 .main-header-item-buy:hover {
   background-color: #5fbb2d;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
 }
 
 .about-list {
@@ -102,13 +131,21 @@ a {
 
 .main-header-text {
   font-style: italic;
-  size: 16px;
+  font-size: 16px;
+  line-height: 23px;
   color: #ee3643;
   text-align: left;
 }
 
 .main-header-phone {
   color: #ee3643;
+  font-size: 21px;
+}
+
+.main-header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
 }
 
 .main-footer-wrapper {
@@ -130,6 +167,7 @@ a {
 
 .about-title {
   font-size: 30px;
+  line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -137,17 +175,37 @@ a {
 .about-text {
   font-size: 13px;
   font-weight: normal;
-  line-height: 1.85;
+  line-height: 24px;
 }
 
 .about-list {
   font-size: 18px;
-  line-height: 1.11;
+  line-height: 20px;
+}
+
+.about-item {
+  position: relative;
+}
+
+.about-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  left: -36px;
+  top: 8px;
 }
 
 .about-link {
+  display: flex;
+  width: 220px;
+  height: 38px;
   color: #ffffff;
   background-color: #ee3643;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-logo,

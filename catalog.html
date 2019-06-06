@@ -17,7 +17,13 @@
         <img src="img/technomart-logo.svg" width="109" height="19" alt="Техномарт">
       </a>
       <ul class="main-header-list">
-        <li class="main-header-item">Тут будет форма "Поиск"</li>
+        <li class="main-header-item">
+          <form class="main-header-form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="main-header-label">
+              <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
+            </label>
+          </form>
+        </li>
         <li class="main-header-item"><a href="#">Закладки</a></li>
         <li class="main-header-item main-header-item-cart"><a href="#">Корзина: 10</a></li>
         <li class="main-header-item main-header-item-buy"><a href="#">Оформить заказ</a></li>
@@ -77,11 +83,16 @@
       </div>
       <div class="developers">
         <span class="filter-name">производители:</span>
-        <input class="visually-hidden" type="checkbox" id="bosch" checked><label for="bosch">bosch</label>
-        <input class="visually-hidden" type="checkbox" id="interskol"><label for="interskol">интерскол</label>
-        <input class="visually-hidden" type="checkbox" id="makita" checked><label for="makita">makita</label>
-        <input class="visually-hidden" type="checkbox" id="dewalt"><label for="dewalt">dewalt</label>
-        <input class="visually-hidden" type="checkbox" id="hitachi"><label for="hitachi">hitachi</label>
+        <input class="visually-hidden" type="checkbox" name="dev-bosch" value="bosch" id="bosch" checked><label
+          for="bosch">bosch</label>
+        <input class="visually-hidden" type="checkbox" name="dev-interskol" value="interskol" id="interskol"><label
+          for="interskol">интерскол</label>
+        <input class="visually-hidden" type="checkbox" name="dev-makita" value="makita" id="makita" checked><label
+          for="makita">makita</label>
+        <input class="visually-hidden" type="checkbox" name="dev-dewalt" value="dewalt" id="dewalt"><label
+          for="dewalt">dewalt</label>
+        <input class="visually-hidden" type="checkbox" name="dev-hitachi" value="hitachi" id="hitachi"><label
+          for="hitachi">hitachi</label>
       </div>
       <div class="power">
         <p class="filter-name">питание:</p>
