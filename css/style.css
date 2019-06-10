@@ -1,13 +1,10 @@
 body {
-  margin: 0 auto;
-  padding: 0;
-
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
-  font-weight: normal;
-  color: black;
+  font-weight: 400;
+  color: #000000;
   text-transform: none;
-
+  line-height: 18px;
   background-color: #ffffff;
 }
 
@@ -29,6 +26,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 /* ШАПКА */
 
 a {
@@ -37,22 +39,27 @@ a {
 
 .main-header-text,
 .main-header-input {
+  min-width: 285px;
   margin: 0;
   padding: 0;
 }
 
 .main-header {
+  display: flex;
   background-color: #f4f7f9;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main-header a {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-header-wrapper {
+
   display: flex;
-  flex-direction: row;
-  width: 1200px;
   height: 42px;
   background-color: #293449;
   align-items: center;
@@ -73,13 +80,6 @@ a {
 
 }
 
-.site-navigation a,
-li {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 
 .main-header-list,
 .user-navigation,
@@ -95,6 +95,8 @@ li {
 
 .main-header-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -110,13 +112,19 @@ li {
 }
 
 .user-navigation {
-  display: flex
+  display: flex;
+  justify-content: center;
 }
 
+
 .user-navigation a {
+  height: 45px;
   font-size: 21px;
   line-height: 21px;
+  background-color: #ffffff;
+
 }
+
 
 .site-navigation {
   background-color: #32425c;
@@ -130,21 +138,26 @@ li {
 
 .user-login-link a {
   color: #000000;
+
 }
 
-.main-header-item:hover,
-.site-navigation li:hover,
-.main-header-item:focus,
-.site-navigation li:focus {
+.main-header-item a:hover,
+.site-navigation a:hover,
+.main-header-item a:focus,
+.site-navigation a:focus {
   background-color: #212a3a;
 }
 
-.main-header-item:active {
+.main-header-item a:active {
   background-color: #161d29;
 }
 
+.main-header-list a:active {
+  color: rgba(255, 255, 255, 0.6);
 
-.site-navigation li:active {
+}
+
+.site-navigation a:active {
   background-color: #1d2739;
 }
 
@@ -154,41 +167,44 @@ li {
 
 .main-header-input {
   color: #ffffff;
-  background-color: #293449;
+  background-color: transparent;
   border: none;
 }
 
 .main-header-input:hover,
 .main-header-input:focus {
-  background-color: #212a3a;
+  background-color: transparent;
 }
 
 .main-header-input:focus {
   background-color: #ffffff;
+  color: #000000;
 }
 
 .main-header-input .main-header-item-cart {
   background-color: #ee3643;
 }
 
-.main-header-item-buy {
+.main-header-item-buy a {
   width: 150px;
   height: 42px;
   background-color: #63a63e;
+  margin-right: 135px;
 }
 
-.main-header-item a li {
-  width: 100%;
-  height: 100%;
+.main-header-item a {
+  height: 42px;
 }
 
-.main-header-item-buy:hover,
-.main-header-item-buy:focus {
+.main-header-item-buy a:hover,
+.main-header-item-buy a:focus {
   background-color: #5fbb2d;
 }
 
-.main-header-item-buy:active {
+.main-header-item-buy a:active {
   background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+  ;
 }
 
 .user-navigation a:hover {
@@ -197,6 +213,15 @@ li {
 
 .about {
   display: flex;
+}
+
+.about-wrapper-long {
+  margin-left: 130px;
+  margin-right: 120px;
+}
+
+.about-wrapper {
+  margin-right: 130px;
 }
 
 .about-list {
@@ -208,13 +233,15 @@ li {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  text-align: left;
   width: 196px;
+  margin-left: 53px;
+  margin-right: 70px;
 }
 
 .main-header-contacts {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .main-header-phone {
@@ -250,15 +277,22 @@ li {
 
 
 /* СТРАНИЦА КАТАЛОГА */
-.main-navigation-list {
+.main-navigation {
   display: flex;
+  align-items: center;
 }
 
 .main-navigation-item {
   margin-right: 40px;
 }
 
-.main-navigation-list,
+.main-navigation-item a {
+  line-height: 18px;
+  font-size: 13px;
+  font-family: PTSans;
+}
+
+
 .page-title {
   display: flex;
   align-items: center;
@@ -274,6 +308,9 @@ li {
 
 .main-item-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .main-navigation-list a {
@@ -294,6 +331,7 @@ li {
   color: #ee3643;
 }
 
+
 .main-sorting-item a:hover {
   color: #000000;
   border-bottom: solid #ee3643 1px;
@@ -309,8 +347,11 @@ li {
 }
 
 .main-show {
+  font-family: PTSans;
   width: 140px;
   height: 38px;
+  line-height: 18px;
+  font-size: 13px;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
 }
@@ -342,12 +383,71 @@ li {
   text-transform: uppercase;
 }
 
+
+
+
+
+.container {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.main-services {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-services-2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-services-item {
+  width: 300px;
+  height: 123px;
+  background-color: #ffbf47;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.main-services-item-blue {
+  background-color: #3bbce3;
+}
+
+.main-services-item-purple {
+  background-color: #dc91d8;
+}
+
+.main-services-item-green {
+  background-color: #8ed78f;
+}
+
+.main-services-item-orange2 {
+  background-color: #ffc047;
+}
+
+.main-services-item-drills {
+  width: 620px;
+  height: 266px;
+}
+
 /* ПОДВАЛ */
 
 .main-footer-wrapper {
   display: flex;
   color: #ffffff;
   background-color: #32425c;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer ul {
@@ -382,9 +482,6 @@ li {
   margin-right: 60px;
 }
 
-.about-wrapper-long {
-  text-align: left;
-}
 
 .about-title {
   font-size: 30px;
@@ -443,7 +540,10 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 130px;
 }
+
+
 
 .main-footer-logo {
   height: 68px;
@@ -562,7 +662,7 @@ li {
 }
 
 .close {
-  position: fixed;
+  position: relative;
   top: 0%;
   right: 0%;
 }
