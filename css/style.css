@@ -44,11 +44,25 @@ a {
   padding: 0;
 }
 
+.main-header,
+.container,
+.main-footer {
+  /* width: 1200px; */
+}
+
 .main-header {
   display: flex;
   background-color: #f4f7f9;
   justify-content: center;
   flex-direction: column;
+}
+
+.main-header-navigation,
+.main-header-wrap,
+.main-navigation {
+  margin: 0 auto;
+  display: flex;
+  width: 1200px;
 }
 
 .main-header a {
@@ -133,6 +147,8 @@ a {
 .site-navigation a {
   line-height: 17px;
   margin-right: 60px;
+  height: 60px;
+  width: 100%;
 
 }
 
@@ -287,6 +303,7 @@ a {
 }
 
 .main-navigation-item a {
+  text-transform: uppercase;
   line-height: 18px;
   font-size: 13px;
   font-family: PTSans;
@@ -311,6 +328,17 @@ a {
   display: flex;
   flex-wrap: wrap;
 
+}
+
+.main-navigation-list,
+.main-sort-by,
+.main-sorting-list,
+.main-sort-direction {
+  display: flex;
+}
+
+.main-navigation-list {
+  list-style: none;
 }
 
 .main-navigation-list a {
@@ -393,6 +421,7 @@ a {
 }
 
 .main-services {
+  min-width: 1070px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -412,6 +441,96 @@ a {
   background-color: #ffbf47;
   margin-right: 20px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.main-services-item h4 {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 23px;
+
+}
+
+.main-services-item-orange::before {
+  position: absolute;
+  content: "";
+  right: 43px;
+  top: 31px;
+  width: 44px;
+  height: 65px;
+  background: url("../img/icons/services/icon-materials.svg") no-repeat;
+}
+
+.main-services-item-orange::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: url("../img/goods/new-flag.png") no-repeat;
+}
+
+.main-services-item-blue::before {
+  position: absolute;
+  content: "";
+  right: 28px;
+  top: 33px;
+  width: 75px;
+  height: 61px;
+  background: url("../img/icons//services/icon-tools.svg") no-repeat;
+}
+
+.main-services-item-purple::before {
+  position: absolute;
+  content: "";
+  right: 31px;
+  top: 31px;
+  width: 78px;
+  height: 62px;
+  background: url("../img/icons/services/icon-equipment.svg") no-repeat;
+}
+
+.main-services-item-green::before {
+  position: absolute;
+  content: "";
+  right: 45px;
+  top: 26px;
+  width: 59px;
+  height: 72px;
+  background: url("../img/icons/services/icon-discounts.svg") no-repeat;
+}
+
+.main-services-item-orange2::before {
+  position: absolute;
+  content: "";
+  right: 31px;
+  top: 32px;
+  width: 78px;
+  height: 63px;
+  background: url("../img/icons/services/icon-delivery.svg") no-repeat;
+
+}
+
+
+.main-services-item a {
+  color: #ffffff;
+  display: flex;
+  width: 135px;
+  height: 38px;
+  background-color: rgb(0%, 0%, 0%, 0.1);
+  font-size: 14px;
+  line-height: 18px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-top: 15px;
+  margin-left: 25px;
 }
 
 .main-services-item-blue {
@@ -430,9 +549,71 @@ a {
   background-color: #ffc047;
 }
 
-.main-services-item-drills {
+.slider {
   width: 620px;
   height: 266px;
+  background: url("../img/slider-image.jpg") no-repeat;
+}
+
+.slide {
+  display: none;
+}
+
+#product-1:checked~.slider #slide1,
+#product-2:checked~.slider #slide2 {
+  display: block;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.slide-button:hover {
+  background-color: #ca2c37
+}
+
+.slide-button:active {
+  background-color: #ba2732
+}
+
+.slider-controls {
+  position: static;
+  bottom: 38px;
+  left: 50%;
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* ПОДВАЛ */

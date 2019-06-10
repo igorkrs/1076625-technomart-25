@@ -14,21 +14,23 @@
 <body>
   <header class="main-header">
     <div class="main-header-wrapper">
-      <a class="main-logo">
-        <img src="img/technomart-logo.svg" width="109" height="19" alt="логотип магазина Техномарт">
-      </a>
-      <ul class="main-header-list">
-        <li class="main-header-item">
-          <form class="main-header-form" action="https://echo.htmlacademy.ru" method="POST">
-            <label class="main-header-label">
-              <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
-            </label>
-          </form>
-        </li>
-        <li class="main-header-item"><a href="#">Закладки</a></li>
-        <li class="main-header-item"><a href="#">Корзина</a></li>
-        <li class="main-header-item main-header-item-buy"><a href="#">Оформить заказ</a></li>
-      </ul>
+      <div class="main-header-navigation">
+        <a class="main-logo">
+          <img src="img/technomart-logo.svg" width="109" height="19" alt="логотип магазина Техномарт">
+        </a>
+        <ul class="main-header-list">
+          <li class="main-header-item">
+            <form class="main-header-form" action="https://echo.htmlacademy.ru" method="POST">
+              <label class="main-header-label">
+                <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
+              </label>
+            </form>
+          </li>
+          <li class="main-header-item"><a href="#">Закладки</a></li>
+          <li class="main-header-item"><a href="#">Корзина</a></li>
+          <li class="main-header-item main-header-item-buy"><a href="#">Оформить заказ</a></li>
+        </ul>
+      </div>
     </div>
     <div class="main-header-wrap">
       <p class="main-header-text">
@@ -63,24 +65,45 @@
     <section class="main-wrapper">
       <ul class="main-services">
         <li class="main-services-item main-services-item-orange">
-          <h3>Материалы</h3><a href="#">На любой вкус</a>
+          <h4>Материалы</h4>
+          <a href="#">На любой вкус</a>
         </li>
         <li class="main-services-item main-services-item-blue">
-          <h3>Инструмент</h3><a href="#">На все случаи</a>
+          <h4>Инструмент</h4>
+          <a href="#">На все случаи</a>
         </li>
         <li class="main-services-item main-services-item-purple">
-          <h3>Техника</h3><a href="#">Для стройки</a>
+          <h4>Техника</h4>
+          <a href="#">Для стройки</a>
         </li>
-        <li class="main-services-item main-services-item-drills">
-          <h3></h3><a href="#">Дрели</a>
+        <li class="main-services-item slider">
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Дрели</h3>
+              <a class="button slide-button" href="#">Открыть каталог</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Перфораторы</h3>
+              <a class="button slide-button" href="#">Открыть каталог</a>
+            </li>
+          </ul>
+
         </li>
         <li>
           <ul class="main-services-2">
             <li class="main-services-item main-services-item-green">
-              <h3>Скидки 50%</h3><a href="#">На 350 товаров</a>
+              <h4>Скидки 50%</h4>
+              <a href="#">На 350 товаров</a>
             </li>
             <li class="main-services-item main-services-item-orange2">
-              <h3>Доставка</h3><a href="#">Бесплатно</a>
+              <h4>Доставка</h4>
+              <a href="#">Бесплатно</a>
             </li>
           </ul>
         </li>
