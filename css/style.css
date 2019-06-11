@@ -124,7 +124,6 @@ a {
 }
 
 .main-header-list a,
-.user-navigation a,
 .site-navigation a {
   color: #fff;
 }
@@ -141,15 +140,26 @@ a {
 
 
 .user-navigation a {
-  height: 45px;
+  min-height: 45px;
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
+  color: #000000;
 
 }
 
-.user-navigation a:first-child {
+.user-login a {
+  background: url("../img/icons/icon-login.svg") no-repeat;
+  background-position: 14px 50%;
   padding-left: 48px;
+  padding-right: 15px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.user-registration a {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .site-navigation {
@@ -163,11 +173,6 @@ a {
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-}
-
-.user-login-link a {
-  color: #000000;
-
 }
 
 
@@ -276,8 +281,11 @@ a {
 }
 
 .main-header-phone {
+  width: 264px;
+  height: 39px;
   color: #ee3643;
   font-size: 21px;
+  border: 3px solid #fff;
 }
 
 .main-header-address {
@@ -542,7 +550,7 @@ a {
   align-items: center;
   text-transform: uppercase;
   border-radius: 2px;
-  margin-top: 15px;
+  bottom: 22px;
   margin-left: 25px;
 }
 
@@ -616,6 +624,8 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  position: absolute;
+  bottom: 22px;
 }
 
 .slide-button:hover {
