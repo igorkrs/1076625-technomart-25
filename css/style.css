@@ -152,7 +152,7 @@ a {
   background: url("../img/icons/icon-login.svg") no-repeat;
   background-position: 14px 50%;
   padding-left: 48px;
-  padding-right: 15px;
+  padding-right: 27px;
   margin-right: 10px;
   background-color: #ffffff;
 }
@@ -465,6 +465,10 @@ a {
   position: relative;
 }
 
+.main-services-item:last-child {
+  margin-bottom: 53px;
+}
+
 .main-services-item h4 {
   font-weight: bold;
   color: #ffffff;
@@ -653,6 +657,68 @@ a {
   cursor: pointer;
 }
 
+
+
+.main-popular h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  height: 89px;
+  color: #32425c;
+  background-color: #f9f5f0;
+  align-items: center;
+  padding-left: 30px;
+  position: relative;
+}
+
+.main-popular h2 a {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 24px;
+}
+
+.main-delevopers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-delevopers-list a {
+  display: flex;
+  width: 220px;
+  height: 145px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-delevopers-list li {
+  width: 218px;
+  height: 145px;
+  border: solid 1px #eaeaea;
+  margin-top: 20px;
+}
+
+.main-delevopers-list li:not(:nth-child(4n)) {
+  margin-right: 20px;
+}
+
+.main-delevopers-list li:last-child {
+  margin-bottom: 85px;
+}
+
 /* ПОДВАЛ */
 
 .main-footer-wrapper {
@@ -702,6 +768,8 @@ a {
 
 
 .about-title {
+  margin: 0;
+  margin-bottom: 38px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -709,10 +777,16 @@ a {
 }
 
 .about-text {
+  margin: 0;
   font-family: PTSans;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
+}
+
+
+.about-wrapper-long {
+  margin-right: 120px;
 }
 
 .about-list {
