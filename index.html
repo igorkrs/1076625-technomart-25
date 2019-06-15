@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet'
-    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet'
     type='text/css'>
   <link rel="stylesheet" href="css/normilize.css">
@@ -22,7 +22,7 @@
         </a>
         <ul class="main-header-list">
           <li class="main-header-item">
-            <form class="main-header-form" action="https://echo.htmlacademy.ru" method="POST">
+            <form class="main-header-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="main-header-label">
                 <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
               </label>
@@ -63,8 +63,8 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section class="main-wrapper">
+  <main>
+    <div class="main-wrapper">
       <ul class="main-services">
         <li class="main-services-item main-services-item-orange">
           <h4>Материалы</h4>
@@ -192,17 +192,59 @@
           <a href="">Все производители</a>
         </h2>
         <ul class="main-delevopers-list">
-          <li><a href="#"><img src="img/developers/bosch.png" alt="Bosch"></a></li>
-          <li><a href="#"><img src="img/developers/Makita.png" alt="Makita"></a></li>
-          <li><a href="#"><img src="img/developers/DeWALT.png" alt="Dewalt"></a></li>
-          <li><a href="#"><img src="img/developers/Interskol.png" alt="Интерскол"></a></li>
-          <li><a href="#"><img src="img/developers/Hitachi.png" alt="Hitachi"></a></li>
-          <li><a href="#"><img src="img/developers/LG.png" alt="LG"></a></li>
-          <li><a href="#"><img src="img/developers/AEG.png" alt="AEG"></a></li>
-          <li><a href="#"><img src="img/developers/Metabo.png" alt="Metabo"></a></li>
+          <li><a href="#"><img src="img/developers/bosch.png" width="126" height="37" alt="Bosch"></a></li>
+          <li><a href="#"><img src="img/developers/Makita.png" width="123" height="40" alt="Makita"></a></li>
+          <li><a href="#"><img src="img/developers/DeWALT.png" width="146" height="44" alt="Dewalt"></a></li>
+          <li><a href="#"><img src="img/developers/Interskol.png" width="200" height="88" alt="Интерскол"></a></li>
+          <li><a href="#"><img src="img/developers/Hitachi.png" width="169" height="31" alt="Hitachi"></a></li>
+          <li><a href="#"><img src="img/developers/LG.png" width="121" height="73" alt="LG"></a></li>
+          <li><a href="#"><img src="img/developers/AEG.png" width="151" height="96" alt="AEG"></a></li>
+          <li><a href="#"><img src="img/developers/Metabo.png" width="204" height="69" alt="Metabo"></a></li>
         </ul>
       </div>
+    </div>
+
+
+    <section class="services-wrapper">
+      <div class="services-info">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <input class="visually-hidden" type="radio" id="delivery" name="toggle2" checked>
+        <input class="visually-hidden" type="radio" id="garantee" name="toggle2">
+        <input class="visually-hidden" type="radio" id="credit" name="toggle2">
+        <div class="services-slider">
+          <div class="services-controls">
+            <label for="delivery" class="service-button">Доставка</label>
+            <label for="garantee" class="service-button">Гарантия</label>
+            <label for="credit" class="service-button">Кредит</label>
+          </div>
+          <ul class="services-info-list">
+            <li class="services-info-item" id="service1">
+              <h3 class="service-title">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!</p>
+            </li>
+            <li class="services-info-item" id="service2">
+              <h3 class="service-title">Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="services-info-item" id="service3">
+              <h3 class="service-title">Кредит</h3>
+              <p>Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+
     <section class="about">
       <div class="about-wrapper about-wrapper-long">
         <h3 class="about-title">КОМПАНИЯ «Техномарт»</h3>
@@ -235,7 +277,7 @@
           заехав в наш офис:
         </p>
         <div class="about-map">
-          <a href=""><img src="img/map.jpg" width="300" height="158"
+          <a href="#"><img src="img/map.jpg" width="300" height="158"
               alt="Наш магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
         </div>
         <a class="about-link" href="#">Заблудились? Напишите нам!</a>
@@ -296,7 +338,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup">
+  <div class="popup popup-hidden">
     <button class="form-close" type="button">
       <img src="img/icons/icon-form-close.svg" width="21" height="21" alt="Выход">
     </button>
@@ -322,12 +364,13 @@
       </div>
     </form>
   </div>
-  <section class="map-block">
+  <div class="map-block map-block-hidden">
     <button class="map-close" type="button">
       <img src="img/icons/icon-form-close.svg" width="21" height="21" alt="Выход">
     </button>
     <iframe src="https://yandex.ru/map-widget/v1/-/CCCpMOPL"></iframe>
-  </section>
+  </div>
+  <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
