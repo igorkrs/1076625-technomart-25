@@ -237,7 +237,7 @@ a {
   color: #000000;
 }
 
-.main-header-input .main-header-item-cart {
+.main-header-item-cart {
   background-color: #ee3643;
 }
 
@@ -378,6 +378,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
+  padding-bottom: 31px;
 }
 
 .main-item,
@@ -490,7 +491,6 @@ a {
   width: 220px;
   height: 38px;
   background-color: #f7f3ec;
-  margin-right: 20px;
   padding-left: 18px;
   box-sizing: border-box;
 }
@@ -666,8 +666,68 @@ a {
   text-transform: uppercase;
 }
 
+.page-buttons {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.page-buttons ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 
+.page-buttons a {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 3px;
+  border: solid 1px #e5e5e5;
+  margin-right: 10px;
+}
+
+.page-buttons li:first-child a {
+  color: #fff;
+  background-color: #ee3643;
+  border: none;
+}
+
+.page-buttons li:last-child a {
+  width: 140px;
+}
+
+.about-perforators-background {
+  background-color: #f4f7f9;
+  padding-top: 67px;
+  padding-bottom: 73px;
+}
+
+.about-perforators {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.about-perforators h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.about-perforators p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+}
 
 
 
@@ -955,7 +1015,7 @@ a {
   display: flex;
 }
 
-.main-delevopers-list {
+.main-developers-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -963,7 +1023,7 @@ a {
   flex-wrap: wrap;
 }
 
-.main-delevopers-list a {
+.main-developers-list a {
   display: flex;
   width: 220px;
   height: 145px;
@@ -971,18 +1031,28 @@ a {
   justify-content: center;
 }
 
-.main-delevopers-list li {
+.main-developers-list a:hover,
+.main-developers-list a:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.main-developers-list a:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.main-developers-list li {
   width: 218px;
   height: 145px;
   border: solid 1px #eaeaea;
   margin-top: 20px;
 }
 
-.main-delevopers-list li:not(:nth-child(4n)) {
+.main-developers-list li:not(:nth-child(4n)) {
   margin-right: 20px;
 }
 
-.main-delevopers-list li:last-child {
+.main-developers-list li:last-child {
   margin-bottom: 85px;
 }
 
@@ -1059,6 +1129,8 @@ a {
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
 }
 
 
@@ -1079,6 +1151,7 @@ a {
 #credit:checked~.services-slider label[for="credit"] {
   background-color: #ffffff;
   color: #32425c;
+  box-shadow: none;
 }
 
 #delivery:checked~.services-slider {
@@ -1409,6 +1482,7 @@ a {
 }
 
 .form-filter {
+  margin-right: 20px;
   text-transform: uppercase;
 }
 
