@@ -8,7 +8,7 @@
     rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet'
     type='text/css'>
-  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -24,13 +24,30 @@
           <li class="main-header-item">
             <form class="main-header-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="main-header-label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                  <path
+                    d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+                </svg>
                 <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
               </label>
             </form>
           </li>
-          <li class="main-header-item"><a href="#">Закладки: 0</a></li>
-          <li class="main-header-item"><a href="#">Корзина: 0</a></li>
-          <li class="main-header-item main-header-item-buy"><a href="#">Оформить заказ</a></li>
+          <li class="main-header-item">
+            <a class="main-header-item-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                <path
+                  d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
+              </svg>Закладки: 0</a></li>
+          <li class="main-header-item">
+            <a class="main-header-item-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                <circle cx="4.5" cy="13.5" r="1.5" />
+                <circle cx="12.5" cy="13.5" r="1.5" />
+                <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+              </svg>Корзина: 0</a>
+          </li>
+          <li class="main-header-item main-header-item-buy"><a class="main-header-item-link" href="#">Оформить заказ</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -87,12 +104,14 @@
               <label for="product-2">Второй</label>
             </div>
             <ul class="slider-list">
-              <li class="slider-item slide" id="slide1">
+              <li class="slider-item" id="slide1">
                 <h3 class="slide-title">Дрели</h3>
                 <a class="button slide-button" href="#">Открыть каталог</a>
+                <p>Соседям на радость!</p>
               </li>
-              <li class="slider-item slide" id="slide2">
+              <li class="slider-item" id="slide2">
                 <h3 class="slide-title">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
                 <a class="button slide-button" href="#">Открыть каталог</a>
               </li>
             </ul>
@@ -238,6 +257,7 @@
               <h3 class="service-title">Кредит</h3>
               <p>Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.</p>
+              <a href="#">Отправить заявку</a>
             </li>
           </ul>
         </div>
@@ -273,7 +293,7 @@
       <div class="about-wrapper">
         <h3 class="about-title">КОНТАКТЫ</h3>
         <p class="about-text">
-          Вы можете забрать товар сами,<br>
+          Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
         <div class="about-map">
@@ -370,7 +390,7 @@
     </button>
     <iframe src="https://yandex.ru/map-widget/v1/-/CCCpMOPL"></iframe>
   </div>
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
