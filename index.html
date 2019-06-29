@@ -26,7 +26,6 @@
           <li class="main-header-item">
             <form class="main-header-form" action="https://echo.htmlacademy.ru" method="GET">
               <label class="main-header-label">
-
                 <input class="main-header-input" type="text" name="search" placeholder="Поиск:">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                   <path
@@ -105,8 +104,8 @@
           <input class="visually-hidden" type="radio" id="product-2-arrow" name="arrow">
           <div class="slider">
             <div class="slider-controls">
-              <label for="product-1">Первый</label>
-              <label for="product-2">Второй</label>
+              <label for="product-1" tabindex="0">Первый</label>
+              <label for="product-2" tabindex="0">Второй</label>
             </div>
             <div class="slider-arrows">
               <label for="product-1-arrow">Влево</label>
@@ -140,7 +139,7 @@
         </li>
       </ul>
       <div class="main-popular">
-        <h2>Популярные товары:
+        <h2 class="main-popular-title">Популярные товары:
           <a href="">Все популярные товары</a>
         </h2>
         <ul class="main-goods-list">
@@ -216,7 +215,7 @@
             </div>
           </li>
         </ul>
-        <h2>Популярные производители:
+        <h2 class="main-popular-title">Популярные производители:
           <a href="">Все производители</a>
         </h2>
         <ul class="main-developers-list">
@@ -330,7 +329,7 @@
       <div class="main-footer-wrapper">
         <p class="main-footer-contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          <a href="tel:+78125550555" class="main-footer-phone">+7(812)555-05-55</a>
+          <a href="tel:+78125550555" class="main-footer-phone">+7 (812) 555-05-55</a>
         </p>
         <ul class="main-footer-categories-list">
           <li class="main-footer-categories-item"><a href="#">Материалы</a></li>
@@ -364,7 +363,7 @@
           </p>
           <p class="main-footer-developers">
             Разработано —
-            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
@@ -400,7 +399,7 @@
     <button class="map-close" type="button">
       <img src="img/icons/icon-form-close.svg" width="21" height="21" alt="Выход">
     </button>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CCCpMOPL"></iframe>
+    <iframe class="map-block-map" src="https://yandex.ru/map-widget/v1/-/CCCpMOPL"></iframe>
   </div>
   <script src="js/script.js"></script>
 </body>
