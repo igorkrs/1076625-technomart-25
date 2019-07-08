@@ -12,14 +12,14 @@
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header-wrapper">
       <div class="main-header-navigation">
-        <a href="index.html" class="main-logo">
+        <a href="index.html" class="main-logo main-logo-active">
           <img src="img/technomart-logo.svg" width="109" height="19" alt="Техномарт">
         </a>
         <ul class="main-header-list">
@@ -134,7 +134,7 @@
         </div>
         <div class="developers">
           <p class="filter-name">производители:</p>
-          <input tabindex="0" class="visually-hidden" type="checkbox" name="developer" value="bosch" id="bosch" checked>
+          <input tabindex="0" class="visually-hidden" type="checkbox" name="developer" value="bosch" id="bosch" checked disabled>
           <label for="bosch">bosch</label>
           <input tabindex="0" class="visually-hidden" type="checkbox" name="developer" value="interskol" id="interskol">
           <label for="interskol">интерскол</label>
@@ -360,8 +360,8 @@
       <div class="about-perforators">
         <h2>пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-          кирпиче, бетоне и камне.<br>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+          кирпиче, бетоне и камне.</p>
+        <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
           дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
           устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
@@ -370,7 +370,7 @@
   <footer class="main-footer">
     <div class="main-footer-blue">
       <div class="main-footer-wrapper">
-        <a class="main-footer-logo">
+        <a class="main-footer-logo main-footer-logo-active" href="index.html">
           <img src="img/technomart-logo-footer.svg" width="138" height="23" alt="Техномарт">
         </a>
         <ul class="main-footer-navigation-list">
@@ -418,7 +418,7 @@
           </p>
           <p class="main-footer-developers">
             Разработано —
-            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>

@@ -446,9 +446,6 @@ a {
   color: #32425c;
 }
 
-
-
-
 /* ШАПКА 2 */
 .user-info {
   list-style: none;
@@ -463,6 +460,15 @@ a {
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+}
+
+.user-info a:hover,
+.user-info a:focus {
+  color:#ee3643;
+}
+
+.user-info a:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .dot {
@@ -779,7 +785,6 @@ a {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-
 .power input+label::before {
   content: "";
   position: absolute;
@@ -801,7 +806,10 @@ a {
 }
 
 
-
+.developers input:disabled+label,
+.power input:disabled+label{
+  opacity: 0.3;
+}
 
 .power {
   display: flex;
@@ -1844,7 +1852,17 @@ a {
   height: 42px;
 }
 
+.main-logo-active:hover,
+.main-footer-logo-active:hover,
+.main-logo-active:focus,
+.main-footer-logo-active:focus {
+  background-color: #ca2c37;
+}
 
+.main-logo-active:active,
+.main-footer-logo-active:active {
+  background-color: #ba2732;
+}
 
 .main-footer-logo {
   display: flex;
